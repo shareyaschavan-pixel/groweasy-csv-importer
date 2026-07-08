@@ -9,11 +9,25 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: '*',
   methods: ['GET', 'POST'],
 }));
 
 app.use(express.json());
+
+// Root route - shows API status
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'GrowEasy AI CSV Importer API',
+    version: '1.0.0',
+    endpoints: {
+      health: 'GET /health',
+      parseCSV: 'POST /api/parse-csv'
+    },
+    frontend: 'https://groweasy-csv-importer-ten.vercel.app'
+  });
+});
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'GrowEasy CSV Importer API is running' });

@@ -4,7 +4,9 @@ An intelligent CSV importer that uses AI to extract and map CRM lead information
 
 ## 🚀 Live Demo
 
-> **Hosted URL:** _(Add Vercel URL after deployment)_
+> **🌐 Hosted App:** [https://groweasy-csv-importer-ten.vercel.app](https://groweasy-csv-importer-ten.vercel.app)
+>
+> **⚙️ Backend API:** [https://groweasy-csv-importer-iv3p.onrender.com](https://groweasy-csv-importer-iv3p.onrender.com)
 
 ## ✨ Features
 
@@ -25,7 +27,7 @@ An intelligent CSV importer that uses AI to extract and map CRM lead information
 | Frontend | Next.js 14 (App Router), TailwindCSS, TypeScript |
 | Backend | Node.js, Express.js |
 | AI | Google Gemini (gemini-1.5-flash) |
-| Deployment | Vercel (Frontend) + Render/Railway (Backend) |
+| Deployment | Vercel (Frontend) + Render (Backend) |
 
 ## 📁 Project Structure
 
